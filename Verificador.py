@@ -16,7 +16,7 @@ def find_rank(username):
                 rank = queue['rank']
                 return tier, rank #tier = elo / rank = divisão
             else:
-                return 'Tem parada errada aí irmão'     
+                return     
     except:
         print(f'Nick {username} não encontrado.')
 def pegar_nicks():
@@ -37,11 +37,9 @@ def pegar_nicks():
                     nick = nick[0]
                     nick = nick[15:-16]
                     if nick in nick_list:
-                        print(nick_list)
                         continue
                     else:
                         nick_list.append(nick)
-                        print(nick_list)
                         try:
                             tier, rank = find_rank(nick)
                             elo = tier + ' ' + rank
