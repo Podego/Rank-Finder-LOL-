@@ -5,7 +5,7 @@ from riotwatcher import LolWatcher, ApiError
 
 def find_rank(username):
     try:
-        api_key = 'RGAPI-88598ef1-a530-4e41-a604-2cb878522ada'
+        api_key = 'KEY_HERE'
         watcher = LolWatcher(api_key)
         region = 'br1'
         me = watcher.summoner.by_name(region, username)
